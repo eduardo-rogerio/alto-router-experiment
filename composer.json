@@ -1,0 +1,18 @@
+{
+    "name": "mixd/src",
+    "type": "project",
+    "require": {
+        "symfony/var-dumper": "^7.1",
+        "altorouter/altorouter": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mixd\\Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "eduardo"
+        }
+    ]
+}
