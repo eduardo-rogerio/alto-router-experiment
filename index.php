@@ -1,17 +1,16 @@
 <?php
 
-use Mixd\Src\TestController;
+use Mixd\Src\PersonController;
 
 require 'vendor/autoload.php';
 
 $router = new AltoRouter();
 
 $router->map('GET', '/', function() {
-    $teste = pi();
-    echo $teste;
+    echo pi();
 });
 
-$router->map('GET', '/teste/[i:id]?/[a:name]?', [TestController::class, 'teste']);
+$router->map('GET', '/person/[i:age]?/[a:name]?', [PersonController::class, 'me']);
 
 $match = $router->match();
 
